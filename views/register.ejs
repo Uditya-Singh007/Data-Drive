@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+  <!-- Login Container -->
+  <div class="w-full max-w-sm p-6 bg-white rounded-lg shadow-2xl">
+
+    <!-- Title -->
+    <h2 class="text-2xl font-bold text-center text-gray-900 mb-6">
+      Create your account
+    </h2>
+
+    <!-- Login Form -->
+    <form action="/user/register" method="post" class="space-y-4">
+      <!-- Username -->
+      <div>
+        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500"
+          required
+        >
+      </div>
+
+      <!-- Email Address -->
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500"
+          required
+        >
+      </div>
+      
+      <!-- Password -->
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="•••••••••" 
+          class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500"
+          required
+        >
+      </div>
+
+      <!-- Submit Button -->
+      <div>
+        <button
+          type="submit"
+          class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+
+    <!-- Divider -->
+    <div class="flex items-center my-6">
+      <div class="flex-grow border-t border-gray-300"></div>
+      <span class="mx-3 text-sm text-gray-500">Or continue with</span>
+      <div class="flex-grow border-t border-gray-300"></div>
+    </div>
+
+    <!-- Social Login Buttons -->
+    <!-- <div class="flex justify-center space-x-4">
+      <button
+        type="button"
+        class="flex items-center px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200">
+        <img src="/path-to-google-logo.png" alt="Google" class="w-5 h-5 mr-2">
+        Google
+      </button>
+      <button
+        type="button"
+        class="flex items-center px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200">
+        <img src="/path-to-github-logo.png" alt="GitHub" class="w-5 h-5 mr-2">
+        GitHub
+      </button>
+    </div> -->
+
+    <!-- Footer -->
+    <p class="mt-6 text-center text-sm text-gray-600">
+      Not a member? <a href="#" class="text-purple-600 font-medium hover:underline">Start a 14-day free trial</a>
+    </p>
+  </div>
+</body>
+</html>
